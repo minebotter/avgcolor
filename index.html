@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/fast-average-color/dist/index.min.js"></script>
+        <script src="avgcolor.js"></script>
+    </head>
+    <body>
+        <input type="file" id="filebox" multiple onchange="filesReceive(this.files);">
+        <img alt="block image" id="img">
+        <textarea id="r"></textarea>
+        <textarea id="g"></textarea>
+        <textarea id="b"></textarea>
+        <button onclick="getClosestColor();">See</button>
+        <img alt="result image" id="resImg">
+        <p id="resBlock"></p>
+        <div style="width: 49%; height: 100px; margin: 0px;" id="firstColor"></div>
+        <div style="width: 49%; height: 100px; margin: 0px;" id="secondColor"></div>
+    </body>
+</html>
